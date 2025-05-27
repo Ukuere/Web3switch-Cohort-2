@@ -1,0 +1,56 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.4;
+
+contract practice5 {
+ 
+ string public name;
+ string public surname;
+ uint public year;
+ uint public test;
+
+//  constructor(
+//     string memory _name,
+//     string memory _surname,
+//     uint _year,
+//     uint _test
+//  ){
+//     name = _name;
+//     surname = _surname;
+//     year = _year;
+//     test = _test;
+//  }
+
+//  function sumAll(uint _a, uint _b) public pure returns (uint) {
+//     uint result = _a + _b;
+//     return result;
+//  } 
+
+// function changeTest (uint _test) public returns (uint){
+//     return test = _test;
+// }
+
+// control statement ...loop..
+// Control structure if....else if...else...
+
+function checkStrenght (uint _a) public pure returns (string memory result){
+    if (_a > 100){
+        return "Greater than 100";
+    }else if (_a == 50){
+        return "is equal to 50";
+    }else{
+        return "Less than 100";
+    }
+    }
+
+        //for loop
+        function sum(uint _n) public pure returns (uint){
+uint result = 0;
+
+for(uint i = 0; i <= _n; i++){
+    result += i;
+}
+return result;
+
+        }
+        
+    }
