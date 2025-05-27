@@ -1,0 +1,52 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.4;
+contract cohort2 {
+    //syntax, structure, data types, modus operandi
+    // data types - number, strings, arrays, address, bybtes, etc.
+    // variables - data holder
+    // statistically typed language
+    // number - uint (unsigned integer) eg. uint8, uint16, uint24, uint128, uint256
+
+    // unsigned integer data type
+    uint age = 30;
+    // string data type
+    string name = "PromiseUkuere";
+    // address data type
+    address tokenOwner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+
+    // mapping
+    // mapping (keyType => valueType) name;
+    mapping (address => uint256) balances;
+
+    // Open Zeppelien
+    string symbol = "CAT";
+    uint year = 20;
+    // name, symbol, total supply, business logic (buying, sellings, swappings, staking),
+
+    // functions
+    function getSymbol () public view returns (string memory){
+        return symbol;
+    }
+    function getYear () public view returns (uint) {
+        return year;
+    }
+// write function cost gas
+// pure keyword performs calculations
+    uint a = 50;
+    uint b = 60;
+    address owner = msg.sender;
+    function AddNumbers () public view returns (uint){
+        return (a + b);
+    }
+// state variable - are stored in the contract level
+// local variables - are stored within a function
+// global variables - are used throughout the smart contract 
+// arguments in functions
+function calculateNumber (uint _a, uint _b) public pure returns (uint){
+    return (_a + _b);
+
+}
+    function getOwner () public view returns (address){
+        return msg.sender;
+    }
+}
